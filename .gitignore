@@ -1,0 +1,54 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Gretel private cloud server private key file
+src/main/resources/pchuit@presc_server
+
+### Log files ###
+SyntheticFHIRDataLogging
+
+### application properties for dev ###
+src/main/resources/application-dev.properties
+
+### CSV files of the Dataset folder
+*.csv
+
+### zip files of the Dataset folder
+*.gz
+
+### text file of gretel command response
+.txt
+
+### Gretel command response text file
+gretel-command-response.txt

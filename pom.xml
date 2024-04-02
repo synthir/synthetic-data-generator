@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>no.uit.syntHIR</groupId>
+	<artifactId>synthetic-fhir-data-services</artifactId>
+	<version>0.0.1</version>
+	<name>synthetic-fhir-data-services</name>
+	<description>Synthetic FHIR Data Component</description>
+	<properties>
+		<java.version>17</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<!--Communicating with server for Synthteic Data (Gretel) -->		
+		<dependency>
+		    <groupId>org.apache.sshd</groupId>
+		    <artifactId>sshd-core</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.sshd</groupId>
+		    <artifactId>sshd-scp</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
+
+	    <dependency>
+		    <groupId>net.i2p.crypto</groupId>
+		    <artifactId>eddsa</artifactId>
+		    <version>0.3.0</version>
+		</dependency>
+			
+		<dependency>
+		    <groupId>joda-time</groupId>
+		    <artifactId>joda-time</artifactId>
+		    <version>2.10.14</version>
+		</dependency>
+	</dependencies>
+
+</project>
